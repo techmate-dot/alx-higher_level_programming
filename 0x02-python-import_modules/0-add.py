@@ -7,4 +7,4 @@ b = 2
 
 answer = add(a, b)
 
-print("(:s) + {:s} = {:s}".format(a, b, answer))
+print("{} + {} = {}".format(a, b, answer))
