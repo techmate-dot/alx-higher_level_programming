@@ -4,15 +4,16 @@ if __name__ == '__main__':
     from calculator_1 import add, sub, mul, div
 
     solve = {'+': add, '-': sub, "*": mul, '/': div}
+    operators = "*+/-*"
 
     length = len(argv)
     if (length) == 4:
         operator = argv[2]
 
     if (length) != 4:
-        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+        print(f"Usage: {argv[0]} <a> <operator> <b>")
         exit(1)
-    elif operator not in "+-*/":
+    elif operator not in operators:
         print("Unknown operator. Available operators: +, -, * and ")
         exit(1)
     else:
