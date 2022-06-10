@@ -3,7 +3,7 @@ if __name__ == '__main__':
     from sys import argv
     from calculator_1 import add, sub, mul, div
 
-    solve = {'+': add, '-': sub, "*": mul, '/': div}
+    solve = {'+': add, '-': sub, '*': mul, '/': div}
     operators = "*+/-*"
 
     length = len(argv)
@@ -20,4 +20,7 @@ if __name__ == '__main__':
         a = int(argv[1])
         b = int(argv[3])
         result = solve[operator](a, b)
-        print("{:d} {:s} {:d} = {:d}".format(a, operator, b, result))
+        if operator == '*':
+             print("{:d} {:s} {:d} = {:d}".format(a, operator, b, mul(a, b)))
+        else:
+            print("{:d} {:s} {:d} = {:d}".format(a, operator, b, result))
