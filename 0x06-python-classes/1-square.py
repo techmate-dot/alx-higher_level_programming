@@ -8,4 +8,7 @@ class Square:
             size: privates class that hold the square size
 
         """
-    _size = 0
+    def __init__(self, size):
+        """Args:
+            size(no type/value verification): Square size"""
+        self._Square__size = size
