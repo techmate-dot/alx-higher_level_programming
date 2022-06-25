@@ -1,2 +1,4 @@
-# 0x06. Python - Classes and Objects
-These projects are about Classes and Objects on Python (a higher-level language).
+# 0. My first square
+
+* Write an empty class Square that defines a square:
+You are not allowed to import any module
