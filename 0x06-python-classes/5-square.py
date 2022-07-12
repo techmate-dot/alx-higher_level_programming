@@ -10,7 +10,7 @@ class Square:
 
         """
     def __init__(self, size=0):
-        """Init the size
+        """initializes the  size
 
         Args:
             size (int, optional): size. Defaults to 0.
@@ -43,3 +43,6 @@ class Square:
             int: area
         """
         return self._Square__size * self._Square__size
+    
+    def my_print(self):
+        for in in range(self._Square)
