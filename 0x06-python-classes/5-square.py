@@ -45,4 +45,8 @@ class Square:
         return self._Square__size * self._Square__size
     
     def my_print(self):
-        for in in range(self._Square)
+        sz = self._Square__size
+        if sz == 0:
+            print('')
+        for i in range(sz):
+            print("#" * sz)
