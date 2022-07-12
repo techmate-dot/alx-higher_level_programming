@@ -43,8 +43,10 @@ class Square:
             int: area
         """
         return self._Square__size * self._Square__size
-    
+
     def my_print(self):
+        """ Prints the square
+        """
         sz = self._Square__size
         if sz == 0:
             print('')
