@@ -1,47 +1,73 @@
-The ``0-add_integer.py`` module
-===============================
+The ``0-add_integer`` module
+======================
 
-using ``add_integer``
---------------------
-Fist import the function ``add_integer`` from the module using ``0-add_integer``:
+Using ``add_integer``
+-------------------
 
->>> add_integer =  __import__('0-add_integer').add_integer
+This is an example text file in reStructuredText format.  First import
+``add_integer`` from the ``0-add_integer`` module:
 
-Now use it:
-#a = int, b = int
->>> add_integer(1, 2)
+-------------------
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+
+# a = int, b = int
+>>> add_integer(5, 2)
+7
+
+# a = negative int, b =  int
+>>> add_integer(-5, 2)
+-3
+
+# a = 0, b = int
+>>> add_integer(0, 2)
+2
+
+# a = float, b = int
+>>> add_integer(1.2, 2)
 3
 
-# a = int, b = -int
->>> add_integer(100, -2)
-98
-
-# a = float, b = -int
->>> add_integer(100.3, -2)
-98
+# a = int, b = float
+>>> add_integer(12, 7.6)
+19
 
 # a = float, b = float
->>> add_integer(4.0, 5.6)
-9
+>>> add_integer(5.3, 9.0)
+14
 
-# a = int, b = str
->>> add_integer(4, "School")
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
-
-# a = str, b = str
->>> add_integer("hi", "be")
+# a = None, b = int
+>>> add_integer(None, 02)
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
-# a = None, b = int
+# a = int, b = None
+>>> add_integer(533, None)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+# a = None
 >>> add_integer(None)
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
-# a = float, b = float
->>> add_integer(6.5, 6.5)
-12
+# a = str
+>>> add_integer('happy')
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+# a = int, b = str
+>>> add_integer(5, 'church')
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+# a = str, b = str
+>>> add_integer('slurpp', 'doggs')
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
