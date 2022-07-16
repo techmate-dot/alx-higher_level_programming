@@ -37,7 +37,7 @@ This is an example text file in reStructuredText format.  First import
 14
 
 # a = None, b = int
->>> add_integer(None, 2)
+>>> add_integer(None, 02)
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
