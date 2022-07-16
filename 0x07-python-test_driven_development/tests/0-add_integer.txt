@@ -39,3 +39,11 @@ TypeError: add_integer() missing 1 required positional argument: 'a'
 Traceback (most recent call last):
 ...
 OverflowError: cannot convert float infinity to integer
+
+# a = float('NaN'), b = float('NaN')
+>>> a = float('NaN')
+>>> b = float('NaN')
+>>> add_integer(a, b)
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
