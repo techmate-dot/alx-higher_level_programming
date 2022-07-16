@@ -20,7 +20,7 @@ Traceback (most recent call last):
 TypeError: a must be an integer
 
 # a = None , b = '2'
->>> add_integer(None, 2)
+>>> add_integer(None, '2')
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
