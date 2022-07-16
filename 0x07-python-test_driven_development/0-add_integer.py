@@ -1,26 +1,29 @@
 #!/usr/bin/python3
-""" add_integer script
 
-Adds two integers (a, b) and returns integer sum
-Floats get converted to integers, all others raise TypeError
 """
-
+Returns the addition of two arguments
+>>>add_integer(2, 3)
+5
+    """
 
 def add_integer(a, b=98):
-    """ add_integer - adds two integers (a, b)
+    """A function that adds two integers
+
+    Args:
+        a (int): The first number to be added
+        b (int, optional): The second number to be added. Defaults to 98.
+
     Raises:
-        TypeError if any of the inputs isn't an integer
+        TypeError: a must be an integer
+        TypeError: b must be an integer
+
     Returns:
-        integer sum
+        int: Addition of a and b
     """
     if not isinstance(a, int) and not isinstance(a, float):
-        raise TypeError("a must be an integer")
+        raise TypeError('a must be an integer')
     if not isinstance(b, int) and not isinstance(b, float):
-        raise TypeError("b must be an integer")
+        raise TypeError('b must be an integer')
 
-    if isinstance(a, float):
-        a = int(a)
-    if isinstance(b, float):
-        b = int(b)
-
-    return a + b
+    add = int(a) + int(b)
+    return add
