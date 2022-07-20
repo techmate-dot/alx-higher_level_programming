@@ -78,37 +78,3 @@ matrix = [1, '2', 3]
 Traceback (most recent call last):
 ...
 TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
-
-
-#8. matrix= list of lists of integers / div= float(inf) => all values == 0.0
->>> matrix = [
-...    [1, 2, 3],
-...    [4, 5, 6]
-... ]
-
->>> print(matrix_divided(matrix, float('inf')))
-[[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]]
-
-#9.  matrix= list of lists of integers with one float('nan') / div= integer
->>> matrix = [
-...    [1, float('nan'), 3],
-...    [4, 5, 6]
-... ]
-
->>> print(matrix_divided(matrix,float('nan')))
-Traceback (most recent call last):
-...
-TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-
-
-#10. : matrix= list of lists of integers with one float('nan') / div= float(inf/nan)
->>> matrix = [
-...    [1, float('nan'), 3],
-...    [4, 5, 6]
-... ]
-
->>> print(matrix_divided(matrix, 3))
-Traceback (most recent call last):
-...
-TypeError: matrix must be a matrix (list of lists) of integers/floats
