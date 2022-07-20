@@ -19,12 +19,14 @@ def check_type(matrix, div):
         bool: true if it is a list of list otherwise returns false
     """
     value = True
+    if len(matrix) == 1:
+        raise TypeError("matrix must be a matrix (list of lists)\
+ of integers/floats")
     if not isinstance(div, int) and not isinstance(div, float):
         raise TypeError("div must be a number")
     if not isinstance(matrix, list) and not isinstance(matrix[0], list):
         value = False
-        raise TypeError("matrix must be a matrix (list of lists)\
- of integers/floats")
+        c
     for row in matrix:
         for element in row:
             if not isinstance(element, int) and not isinstance(element, int):
