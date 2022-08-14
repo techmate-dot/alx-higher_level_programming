@@ -26,7 +26,14 @@ basic list of commands required to manipulate a database
    SHOW TABLES IN mysql;
    ```
 
-
+4. A script that creates a table called `first_table` in the current database in your MySQL server.
+   
+   ```sql
+   CREATE TABLE IF NOT EXISTS first_table(
+       id INT,
+       name VARCHAR(256)
+   );
+   ```
 
 
 
