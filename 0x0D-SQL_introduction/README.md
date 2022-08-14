@@ -14,13 +14,47 @@ basic list of commands required to manipulate a database
    CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
    ```
 
-2.  script that deletes the database `hbtn_0c_0` in your MySQL server.
+2. A  script that deletes the database `hbtn_0c_0` in your MySQL server.
    
    ```sql
    DROP DATABASE IF EXISTS hbtn_0c_0;
    ```
+
+3. A script that lists all the tables of a database in your MySQL server.
    
-   
+   ```sql
+   SHOW TABLES IN mysql;
+   ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
