@@ -53,7 +53,11 @@ basic list of commands required to manipulate a database
    INSERT INTO first_table(id, name) VALUES (89,'Best School');
    ```
    
-   8. 
+   8. displays the number of records with `id = 89` in the table `first_table` of the database `hbtn_0c_0` in your MySQL server.
+      
+      ```sql
+      
+      ```
 
 
 
