@@ -37,9 +37,15 @@ basic list of commands required to manipulate a database
 
 5.  prints the full description of the table `first_table` from the database `hbtn_0c_0` in your MySQL server.
    
-   ```sq
+   ```sql
+   SHOW CREATE TABLE first_table;
+   ```
 
-
+6.  lists all rows of the table `first_table` from the database `hbtn_0c_0` in your MySQL server.
+   
+   ```sql
+   SELECT * FROM first_table;
+   ```
 
 
 
