@@ -47,7 +47,13 @@ basic list of commands required to manipulate a database
    SELECT * FROM first_table;
    ```
 
-
+7. inserts a new row in the table `first_table` (database `hbtn_0c_0`) in your MySQL server.
+   
+   ```sql
+   INSERT INTO first_table(id, name) VALUES (89,'Best School');
+   ```
+   
+   8. 
 
 
 
