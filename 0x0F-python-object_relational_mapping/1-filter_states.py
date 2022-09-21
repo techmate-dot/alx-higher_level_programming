@@ -14,11 +14,11 @@ if __name__ == "__main__":
 
     db = MySQLdb.Connect(host=my_host, user=my_user,
                          password=my_passwd, db=my_db, port=3306)
-cur = db.cursor()
+    cur = db.cursor()
 
-cur.execute("SELECT * from states;")
-states = cur.fetchall()
+    cur.execute("SELECT * from states;")
+    states = cur.fetchall()
 
-for id, name in states:
-    if name[0] == 'N':
-        print(f"({id}, '{name}')")
+    for id, name in states:
+        if name[0] == 'N':
+            print(f"({id}, '{name}')")
