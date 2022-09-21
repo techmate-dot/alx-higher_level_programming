@@ -16,7 +16,7 @@ if __name__ == "__main__":
 db = MySQLdb.Connect(host=my_host, user=my_user,
                      password=my_passwd, port=3306, db=my_db)
 cur = db.cursor()
-cur.execute("SELECT * from states WHERE name='{}'".format(find))
+cur.execute("SELECT * from states WHERE name='{}';".format(find))
 found = cur.fetchall()
 for name in found:
     print(name)

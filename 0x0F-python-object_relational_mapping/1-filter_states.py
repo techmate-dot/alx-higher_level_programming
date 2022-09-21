@@ -16,7 +16,7 @@ if __name__ == "__main__":
                          password=my_passwd, db=my_db, port=3306)
 cur = db.cursor()
 
-cur.execute("SELECT * from states")
+cur.execute("SELECT * from states;")
 states = cur.fetchall()
 
 for id, name in states:
