@@ -19,5 +19,4 @@ if __name__ == "__main__":
     cur = db.cursor()
     cur.execute("SELECT * from states WHERE name='{:s}';".format(find))
     found = cur.fetchall()
-    for name in found:
-        print(name)
+    print(found[0])
