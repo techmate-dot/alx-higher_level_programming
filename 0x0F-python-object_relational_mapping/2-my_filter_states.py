@@ -19,6 +19,7 @@ if __name__ == "__main__":
     cur = db.cursor()
     cur.execute("SELECT * from states WHERE name='{:s}';".format(find))
     found = cur.fetchall()
+    print(found)
     for name in found:
         if name[1] == find:
             print(name)
