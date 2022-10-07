@@ -12,6 +12,11 @@ if __name__ == '__main__':
     Base = declarative_base()
 
     class states(Base):
+        """maps the tables
+
+        Args:
+            Base (obj): Inherited class
+        """
         __tablename__ = 'states'
         id = Column(Integer, primary_key=True, autoincrement=True,
                     Nullable=False)
