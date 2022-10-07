@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 """class defination of a state"""
 
-from unicodedata import name
-from sqlalchemy import Integer
-
 
 if __name__ == '__main__':
     from sqlalchemy import Column, Integer, String
@@ -11,7 +8,7 @@ if __name__ == '__main__':
 
     Base = declarative_base()
 
-    class states(Base):
+    class state(Base):
         """maps the tables
 
         Args:
