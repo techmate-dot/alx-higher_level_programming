@@ -8,7 +8,7 @@ if __name__ == '__main__':
 
     Base = declarative_base()
 
-    class state(Base):
+    class State(Base):
         """maps the tables
 
         Args:
