@@ -1,1 +1,1 @@
-Semicode style was used
+Semistandard style was used
