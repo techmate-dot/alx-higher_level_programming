@@ -50,37 +50,17 @@ basic list of commands required to manipulate a database
 7. inserts a new row in the table `first_table` (database `hbtn_0c_0`) in your MySQL server.
    
    ```sql
-   INSERT INTO first_table(id, name) VALUES (89,'Best School');
+      INSERT INTO first_table(id, name) VALUES (89,'Best School');
    ```
+
+8. displays the number of records with `id = 89` in the table `first_table` of the database `hbtn_0c_0` in your MySQL server.
    
-   8. displays the number of records with `id = 89` in the table `first_table` of the database `hbtn_0c_0` in your MySQL server.
-      
-      ```sql
-      
-      ```
+   ```sql
+      SELECT COUNT(*) FROM first_table WHERE id = 89;
+   ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+9. creates a table `second_table` in the database `hbtn_0c_0` in your MySQL server and add multiples rows.
+   
+   ```sql
+   
+   ```
