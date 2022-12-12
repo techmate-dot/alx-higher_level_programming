@@ -10,6 +10,5 @@ request(link, function (error, response, body) {
   }
   const movie = JSON.parse(body);
   console.log(movie.title);
-  console.log(link);
 }
 );
