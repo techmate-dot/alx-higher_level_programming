@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const request = require('request');
-const link = 'http://loripsum.net/api';
+const link = process.argv[2];
 
 const file = process.argv[3];
 
