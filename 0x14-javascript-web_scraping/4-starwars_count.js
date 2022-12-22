@@ -9,8 +9,8 @@ request(link, function (error, response, body) {
   if (error) {
     return console.error(error);
   }
-  const new_body = JSON.parse(body);
-  const result = new_body.results;
+  const newBody = JSON.parse(body);
+  const result = newBody.results;
   result.forEach(function (element) {
     for (character in element.characters) {
       if (character.includes(ID)) {
