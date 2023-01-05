@@ -9,23 +9,16 @@ request(link, 'get', function (error, response, body) {
     return console.error(error);
   }
   const newBody = JSON.parse(body);
-  let num = newBody[0].userId;
-  let taskCompleted = 0;
-  const dict = {};
+  const taskCount = {};
   newBody.forEach(function (element) {
-    // console.log(element.userId);
-    const userid = element.userId;
-    if (userid !== num) {
-      dict[num] = taskCompleted;
-      num = userid;
-      taskCompleted = 0;
-    }
-    if (userid === num) {
-      if (element.completed === true) {
-        ++taskCompleted;
+    if (element.completed) {
+      const userId = element.userId;
+      if (userId in taskCount) {
+        taskCount[userId] += 1;
+      } else {
+        taskCount[userId] = 1;
       }
     }
   });
-  dict[num] = taskCompleted;
-  console.log(dict);
+  console.log(taskCount);
 });
